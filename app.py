@@ -14,7 +14,7 @@ mongo = PyMongo(app)
 @app.route("/")                                                 # displays index.html as home page
 def index():
     mars = mongo.db.mars.find_one()                             # use pymongo to find mars collection and assign path to mars variable
-    return render_template("index.html", mars=mars)             # flask returns HTML template using index.html file and the mars collection
+    return render_template("index.html", mars=mars)             # flask returns webpage using index.html file as template and the mars collection for content
 
 @app.route("/scrape")                                           
 def scrape():
