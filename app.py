@@ -26,4 +26,3 @@ def scrape():
 
 if __name__ == "__main__":                                      # tells flask to run code
     app.run()
-
